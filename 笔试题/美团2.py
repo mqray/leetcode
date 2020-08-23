@@ -7,7 +7,7 @@ import sys
 def main():
     n = int(sys.stdin.readline())
     # 先将所有票放到list中
-    if not n or n==0: return 0
+    if not n or n == 0: return 0
     tickets = []
     count = 0
     for i in range(n):

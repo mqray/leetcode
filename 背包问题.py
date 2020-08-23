@@ -24,8 +24,7 @@ class Solution:
 # 简单的做法是，将dp[1:]设置为正无穷
 class SolutionI:
     def backpack(self,N,weights,values):
-        # dp = [0]*(N+1)
-        dp = [0] +[float('-inf')]*N#由于我们要求最大价值，这里就设置为-oo
+        dp = [0] + [float('-inf')]*N#由于我们要求最大价值，这里就设置为-oo
         for j in range(len(weights)):
             for i in range(N, -1, -1):
                 if i >= weights[j]:
